@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes</title>
+    <!-- css-link -->
+    <link rel="stylesheet" href="main.css">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="/Noteimage/logo.png" type="image/x-icon">
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--aladin-font-link-->
+    <link href="https://fonts.googleapis.com/css2?family=Aladin&display=swap" rel="stylesheet">
+    <!--Satisfy-font-link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <!-- custom-js -->
+    <script type="module" src="/NoteJS/home.js"></script>
+</head>
+
+<body>
+    <div class="hearder">
+        <a href="/" class="logo">
+            <img src="Noteimage/logo.png" alt="" height="30px">
+            <h2>Notes</h2>
+        </a>
+        <div class="navbar">
+            <a href="/TO-DO/home.html" class="nav" data-tooltip="Todo list">
+                <i class="fa-solid fa-clipboard-list"></i>
+                <span>Todo list</span>
+            </a>
+            <a href="/Contact-Form/home.html" class="nav" data-tooltip="Contact us">
+                <i class="fa-regular fa-envelope"></i>
+                <span>Contact me</span>
+            </a>
+            <button class="toggler" data-toggler-Btn>
+                <i class="fa-solid fa-bars"></i>
+                <!-- <i class="fa-solid fa-bars-staggered"></i> -->
+            </button>
+        </div>
+    </div>
+    <div class="overlayer" data-overlayer data-toggler-Btn></div>
+    <div class="side-panel" data-side-panel>
+
+        <div class="add-nodes">
+            <h2>Add New Note</h2>
+            <button class="primary" data-NoteAdd-btn data-tooltip="New Note"><i class="fa-solid fa-plus"></i></button>
+        </div>
+        <div class="add-book" id="Add-book">
+            <h2>
+                Creat New Notebook
+            </h2>
+            <button class="primary" data-tooltip="New Notebook"><i class="fa-solid fa-plus"></i></button>
+        </div>
+        <div class="bag"></div>
+
+        <div class="info">
+            <span>Copyright 20224 <strong>Code-with-amaan</strong></span>
+        </div>
+    </div>
+
+    <div class="main-area">
+
+        <div class="Greeting-head">
+            <div>
+                <h3 id="greeting">Good</h3>
+                <h3>What's your mind thinking</h3>
+            </div>
+            <div class="clock">
+                <div class="date">
+                    <span id="day"></span>
+                    <span id="date"></span>
+                    <span id="month"></span>
+                    <span id="year"></span>
+                </div>
+                <div class="time">
+                    <span id="hours"></span>
+                    <span>:</span>
+                    <span id="minutes"></span>
+                    <span>:</span>
+                    <span id="seconds"></span>
+                    <span id="period"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="book-name">
+            <h3 id="BookName"></h3>
+        </div>
+
+        <!-- notes -->
+        <div class="notes">
+            <div class="welcome-page emtpy-book">
+                <h2 class="text">welcome to our notekeeper</h2>
+                <img src="/Noteimage/first-page.svg" alt="" height="90%" width="100%">
+            </div>
+        </div>
+
+        <div class="add-nodes flot-btn">
+            <button class="primary" disabled data-NoteAdd-btn><i class="fa-solid fa-plus"></i></button>
+        </div>
+        <div class="notification-area">
+    </div>
+</body>
+
+</html>
