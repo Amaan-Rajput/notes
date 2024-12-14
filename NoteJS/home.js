@@ -86,19 +86,6 @@ addEventOnElements($togglerBtn, 'click', function () {
 const $tooltipElems = document.querySelectorAll('[data-tooltip]');
 $tooltipElems.forEach($elem => Tooltip($elem));
 
-
-const welcomePageTemplate = `
-    <div class="welcome-page emtpy-book">
-        <h2 class="text">welcome to our notekeeper</h2>
-        <img src="https://amaan-rajput.github.io/notes/Noteimage/first-page.svg" alt="" height="90%" width="100%" >
-    </div>`;
-
-const emptyNotesTemplate = `
-        <div class="emtpy-book">
-            <img src="https://amaan-rajput.github.io/notes/Noteimage/Data-not-found.svg" alt="" height="100%" width="100%">
-            <h2>Please Add Notes</h2>
-        </div> `;
-
 const welcomePage = document.querySelector('.welcome-page');
 if (window.innerWidth <= 900) {
     welcomePage.addEventListener('click', function () {
@@ -171,6 +158,15 @@ const renderExistedNote = function () {
 renderExistedNote();
 
 export {
-    welcomePageTemplate,
-    emptyNotesTemplate
+    const welcomePageTemplate = `
+    <div class="welcome-page emtpy-book">
+        <h2 class="text">welcome to our notekeeper</h2>
+        <img src="https://amaan-rajput.github.io/notes/Noteimage/first-page.svg" alt="" height="90%" width="100%" >
+    </div>`;
+
+const emptyNotesTemplate = `
+        <div class="emtpy-book">
+            <img src="https://amaan-rajput.github.io/notes/Noteimage/Data-not-found.svg" alt="" height="100%" width="100%">
+            <h2>Please Add Notes</h2>
+        </div> `;
 }
