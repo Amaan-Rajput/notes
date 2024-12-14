@@ -391,7 +391,15 @@ body {
     right: 0;
     z-index: 10;
 }
-
+#back{
+    position: relative;
+    color: var(--main-heading-);
+    font-size: 25px;
+    width: 25px;
+    margin: 0px 1px 0px 1px;
+    overflow: hidden;
+    cursor: pointer;
+}
 #eyes {
     position: relative;
     color: var(--main-heading-);
