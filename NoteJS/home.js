@@ -75,13 +75,6 @@ setInterval(time, 1000);
 const $togglerBtn = document.querySelectorAll('[data-toggler-Btn]');
 const $sidePanel = document.querySelector('[data-side-panel]');
 const $overlayer = document.querySelector('[data-overlayer]')
-const welcomePage = document.querySelector('.welcome-page');
-if (window.innerWidth <= 900) {
-    welcomePage.addEventListener('click', function () {
-        $sidePanel.classList.toggle('active');
-        $overlayer.classList.toggle('active');
-    })
-}
 
 addEventOnElements($togglerBtn, 'click', function () {
     $sidePanel.classList.toggle('active');
@@ -105,6 +98,14 @@ const emptyNotesTemplate = `
             <img src="https://amaan-rajput.github.io/notes/Noteimage/Data-not-found.svg" alt="" height="100%" width="100%">
             <h2>Please Add Notes</h2>
         </div> `;
+
+const welcomePage = document.querySelector('.welcome-page');
+if (window.innerWidth <= 900) {
+    welcomePage.addEventListener('click', function () {
+        $sidePanel.classList.toggle('active');
+        $overlayer.classList.toggle('active');
+    })
+}
 // noteBook
 
 const AddBook = document.querySelector('#Add-book');
