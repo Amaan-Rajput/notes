@@ -384,7 +384,7 @@ body {
 
 .navbar {
     position: absolute;
-    width: 100px;
+    width: 125px;
     display: flex;
     justify-content: center;
     top: 65px;
