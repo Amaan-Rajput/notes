@@ -10,13 +10,13 @@ const $NoteAddBtns = document.querySelectorAll('[data-NoteAdd-btn]');
 
 const welcomePageTemplate = `
     <div class="welcome-page emtpy-book">
-        <img src="https://amaan-rajput.github.io/notes/Noteimage/first-page.svg" alt="" height="90%" width="100%" >
+        <img href="https://amaan-rajput.github.io/notes/Noteimage/first-page.svg" alt="" height="90%" width="100%" >
         <h2 class="text">welcome to our notekeeper</h2>
     </div>`;
 
 const emptyNotesTemplate = `
         <div class="emtpy-book">
-            <img src="https://amaan-rajput.github.io/notes/Noteimage/Data-not-found.svg" alt="" height="100%" width="100%">
+            <img href="https://amaan-rajput.github.io/notes/Noteimage/Data-not-found.svg" alt="" height="100%" width="100%">
             <h2>Please Add Notes</h2>
         </div> `;
 
