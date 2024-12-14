@@ -10,8 +10,8 @@ const $NoteAddBtns = document.querySelectorAll('[data-NoteAdd-btn]');
 
 const welcomePageTemplate = `
     <div class="welcome-page emtpy-book">
-        <h2 class="text">welcome to our notekeeper</h2>
         <img src="href="https://amaan-rajput.github.io/notes/Noteimage/first-page.svg" alt="" height="90%" width="100%" >
+        <h2 class="text">welcome to our notekeeper</h2>
     </div>`;
 
 const emptyNotesTemplate = `
