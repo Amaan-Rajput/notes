@@ -1,4 +1,5 @@
 import { Book } from "./Book.js";
+import { emptyNotesTemplate, welcomePageTemplate } from "./home.js";
 import { Note } from "./note.js";
 import { ActiveBook, CallNotification } from "./notes.js";
 
