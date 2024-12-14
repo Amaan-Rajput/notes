@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do-list</title>
+    <!-- title-image -->
+    <link rel="icon" type="image/x-icon" href="title-image.png">
+    <!-- small-screen -->
+    <link rel="stylesheet" media="screen and (min-width: 320px) and (max-width: 999px)" href="small.css">
+    <!-- large-screen -->
+    <link rel="stylesheet" media="screen and (min-width: 1000px)" href="large.css">
+    <!--boxicons-link-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!--aladin-font-link-->
+    <link href="https://fonts.googleapis.com/css2?family=Aladin&display=swap" rel="stylesheet">
+    <!-- Charm-font-link -->
+    <link href="https://fonts.googleapis.com/css2?family=Charm&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="head">
+        <h2 id="greeting"></h2>
+        <input type="text" id="name" placeholder="type your name" />
+        <h2>What's your today Plane</h2>
+    </div>
+    <div class="navbar">
+        <i class='bx bxs-show' id="eyes">show</i>
+        <i class='bx bxs-trash' id="trash"></i>
+        <i class='bx bx-fullscreen' id="full">full</i>
+    </div>
+
+    <form class="type-area" id="type-area">
+        <input type="text" id="type_input" placeholder="tpye your task" />
+        <button type="submit">ADD</button>
+    </form>
+
+    <div class="center-notification " id="center-notification"></div>
+
+    <div class="tasks">
+        <p>Your tasks</p>
+    </div>
+    <div class="tasks-list" id="tasks-list">
+        <!-- <div class="list">
+            <i class='bx bx-check'></i>
+            <i class='bx bx-x'></i>
+            <input type="text" placeholder="some" />
+            <button class="tasks-edit">Edit</button>
+            <button class="tasks-Delete">Delete</button>
+        </div> -->
+    </div>
+
+    <div class="date">
+        <span id="day"></span>
+        <span id="date"></span>
+        <span id="month"></span>
+        <span id="year"></span>
+    </div>
+    <div class="time">
+        <span id="hours">00</span>
+        <span>:</span>
+        <span id="minutes">00</span>
+        <span>:</span>
+        <span id="seconds">00</span>
+        <span id="period"></span>
+    </div>
+
+    <div class="notification" id="notification"></div>
+
+    <div class="success">
+        Your completed tasks
+    </div>
+    <div class="success-list" id="success-list">
+        <!-- <div class="list">
+            <input type="text" placeholder="some">
+            <button class="success-Delete">Delete</button>
+        </div> -->
+    </div>
+
+    <div class="give-up">
+        Your give up tasks
+    </div>
+    <div class="give-up-list" id="give-up-list">
+        <!-- <div class="list">
+            <input type="text" placeholder="some">
+            <button class="give-up-Delete">Delete</button>
+        </div> -->
+    </div>
+
+    <div class="popups">
+        <p id="popup-massage"></p>
+        <p>are you sure?</p>
+        <button type="button" id="ok">OK</button>
+        <button type="button" id="cancel">Cancel</button>
+    </div>
+
+    <div class="tasks-add" id="tasks-add"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
+
+    <script src="home.js"></script>
+</body>
+
+</html>
