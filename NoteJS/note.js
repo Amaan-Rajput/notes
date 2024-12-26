@@ -16,8 +16,10 @@ export const Note = function (note) {
         <div class="container-body">${text}</div>
         <div class="container-footer">
         <span class="time">${getRelativeTime(PostedOn)}</span>
-        <button class="note-bin-icon primary" data-delete-Note data-tooltip="Delete Note"><i
-            class="fa-solid fa-trash"></i></button>
+        <div class="icons">
+            <button class="note-edt-icon primary" data-Edit-Note data-tooltip="Edit Note"><i class="fa-solid fa-pen-to-square"></i></button>
+            <button class="note-bin-icon primary" data-delete-Note data-tooltip="Delete Note"><i class="fa-solid fa-trash"></i></button>
+        </div>
         </div>`;
 
     Tooltip($note.querySelector('[data-tooltip]'));
