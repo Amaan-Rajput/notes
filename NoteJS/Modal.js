@@ -52,8 +52,8 @@ const ReadModel = function (title = 'Untitled', text = 'Add your note...', time 
     $model.classList.add("model");
     $model.innerHTML = `
         <button class="icon-btn" data-close-btn data-tooltip="Close"><i class="fa-solid fa-xmark"></i></button>
-        <input class="model-title" placeholder="Topic name" value="${title}" data-note-field>
-        <textarea class="model-text" data-note-field>${text}</textarea>
+        <input class="model-title" readonly placeholder="Topic name" value="${title}" data-note-field>
+        <textarea class="model-text" readonly data-note-field>${text}</textarea>
         <div class="model-foot">
             <span class="note-time">${time}</span>
         </div>
