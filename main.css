@@ -127,7 +127,8 @@ body {
 .navbar a span {
     display: none;
 }
-.navbar .Note-Sty{
+
+.navbar .Note-Sty {
     position: relative;
     height: 25px;
     width: 25px;
@@ -137,7 +138,8 @@ body {
     font-size: 15px;
     overflow: hidden;
 }
-.navbar #notetoggle{
+
+.navbar #notetoggle {
     height: 15px;
     width: 15px;
     overflow: hidden;
@@ -270,6 +272,7 @@ body {
     font-size: 25px;
     padding-inline: 8px 8px;
     transition: .3s;
+    animation: line-trf .3s cubic-bezier(0.2, 0.58, 0.51, 0.89) forwards;
 }
 
 .side-panel .book .title {
@@ -400,6 +403,10 @@ button:where(:hover, :focus-within) {
     text-transform: capitalize;
 }
 
+.main-area .notes {
+    translate: .3s;
+}
+
 .main-area .notes.box-order:not(.emtpy-book) {
     position: relative;
     width: 100%;
@@ -462,6 +469,7 @@ button:where(:hover, :focus-within) {
 .main-area .notes.linear-order .notes-container .layer {
     display: none;
 }
+
 .main-area .notes.linear-order .notes-container {
     position: relative;
     display: flex;
@@ -469,6 +477,17 @@ button:where(:hover, :focus-within) {
     width: 100%;
     border-radius: 10px;
     border-bottom: 1px dashed #484861;
+    animation: line-trf .3s cubic-bezier(0.2, 0.58, 0.51, 0.89) forwards;
+}
+
+@keyframes line-trf {
+    0% {
+        left: -15px;
+    }
+
+    100% {
+        left: 0;
+    }
 }
 
 .notes.linear-order .notes-container .container-title {
@@ -510,6 +529,7 @@ button:where(:hover, :focus-within) {
     background: transparent;
     z-index: 2;
 }
+
 .main-area .notes.box-order .notes-container {
     position: relative;
     display: flex;
@@ -521,6 +541,17 @@ button:where(:hover, :focus-within) {
     background-color: #d5cbe44d;
     color: #201a55;
     cursor: pointer;
+    animation: box-trf .3s cubic-bezier(0.2, 0.58, 0.51, 0.89) forwards;
+}
+
+@keyframes box-trf {
+    0% {
+        bottom: -15px;
+    }
+
+    100% {
+        bottom: 0;
+    }
 }
 
 .main-area .notes.box-order .notes-container:where(:hover, :focus-visible) {
