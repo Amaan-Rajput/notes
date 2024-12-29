@@ -14,7 +14,7 @@ export const Note = function (note) {
         <div class="container-title">
             <h3>${title}</h3>
         </div>
-        <div class="container-body" data-note-text>${text}</div>
+        <pre class="container-body" data-note-text>${text}</pre>
         <div class="container-footer">
             <span class="time">${getRelativeTime(PostedOn)}</span>
             <div class="icons">
